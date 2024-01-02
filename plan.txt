@@ -1,0 +1,11 @@
+build an inventory system for a small business.
+
+owner can:
+add, remove, and edit inventory items
+item ---> name, description, quantity, and cost
+view the current inventory + the total value of all items
+
+order button (deactivated when over reorder point) -> activated under order point->click to order more of the product->send email to owner
+
+
+

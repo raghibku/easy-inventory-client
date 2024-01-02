@@ -1,0 +1,32 @@
+[
+    {
+      "name": "Elegant Evening Gown",
+      "description": "A stunning full-length gown perfect for formal occasions.",
+      "quantity": 20,
+      "cost": 199.99
+    },
+    {
+      "name": "Casual Summer Dress",
+      "description": "A light and comfortable dress ideal for hot summer days.",
+      "quantity": 50,
+      "cost": 49.99
+    },
+    {
+      "name": "Chic Cocktail Dress",
+      "description": "A stylish knee-length dress suitable for cocktail parties.",
+      "quantity": 30,
+      "cost": 79.99
+    },
+    {
+      "name": "Bohemian Maxi Dress",
+      "description": "A flowy and boho-inspired maxi dress perfect for a relaxed look.",
+      "quantity": 25,
+      "cost": 69.99
+    },
+    {
+      "name": "Classic Little Black Dress",
+      "description": "A timeless and versatile black dress for various occasions.",
+      "quantity": 40,
+      "cost": 89.99
+    }
+  ]
