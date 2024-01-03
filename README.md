@@ -18,15 +18,15 @@ Make sure you have the following installed on your machine:
    git clone https://github.com/raghibku/easy-inventory-client.git
 
 2. Navigate to the project directory
-   
+   ```bash
     cd your-project-directory
 
 3. Install dependencies: 
-
+    ```bash
     npm install
 
 4. Running the Project
 To start the development server, run the following command: 
-
+    ```bash
     npm run dev
 
