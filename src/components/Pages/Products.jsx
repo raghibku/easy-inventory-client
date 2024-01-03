@@ -12,14 +12,14 @@ const Products = () => {
     const { data: clothes = [], refetch } = useQuery({
         queryKey: ['clothes'],
         queryFn: async () => {
-            const res = await axios.get('http://localhost:5000/allInventoryItems');
+            const res = await axios.get('https://easy-server-nruxrjqzc-raghibs-projects.vercel.app/allInventoryItems');
             return res.data;
         }
     })
     
     const [totalCost, settotalCost] = useState(0);
     useEffect(()=>{
-        fetch('http://localhost:5000/totalCost')
+        fetch('https://easy-server-nruxrjqzc-raghibs-projects.vercel.app/totalCost')
         .then(res=>res.json())
         .then(data=>settotalCost(data))
     },[clothes])
@@ -35,7 +35,7 @@ const Products = () => {
         const orderQuantity = form.orderQuantity.value;
         console.log(orderQuantity);
         const newOrder = { orderQuantity}
-        axios.patch(`http://localhost:5000/orderItem/${modalId}`, newOrder)
+        axios.patch(`https://easy-server-nruxrjqzc-raghibs-projects.vercel.app/orderItem/${modalId}`, newOrder)
             .then(res => {
                 console.log(res.data)
                 if (res.data.modifiedCount > 0) {
@@ -65,7 +65,7 @@ const Products = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                axios.delete(`http://localhost:5000/deleteItem/${id}`)
+                axios.delete(`https://easy-server-nruxrjqzc-raghibs-projects.vercel.app/deleteItem/${id}`)
                     .then(res => {
                         if (res.data.deletedCount > 0) {
                             refetch();
@@ -139,7 +139,7 @@ const Products = () => {
 
                 </table>
                 {
-                    totalCost? <h1 className='text-2xl text-center text-primary'>Total Value: {totalCost} $</h1>:<></>
+                    totalCost? <h1 className='text-2xl py-4 text-center text-primary'>Total Value: {totalCost} $</h1>:<></>
                 }
             </div>
             <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">

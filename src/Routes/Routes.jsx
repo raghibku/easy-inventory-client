@@ -21,7 +21,7 @@ export const routes = createBrowserRouter([
             {
                 path: '/updateItem/:id',
                 element: <UpdateItem />,
-                loader: ({params})=>fetch(`http://localhost:5000/singleInventoryItem/${params.id}`)
+                loader: ({params})=>fetch(`https://easy-server-nruxrjqzc-raghibs-projects.vercel.app/singleInventoryItem/${params.id}`)
             }
         ]
     }
